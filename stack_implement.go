@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	stack "github.com/kkumar326/go-dsa/pkgs/stack"
+	stack "github.com/kkumar326/go-dsa/pkgs/stack/linkedlist"
 )
 
 func stackRun() {
@@ -13,7 +12,7 @@ func stackRun() {
 	stack.Push(1)
 	stack.Push("Second")
 	stack.Push(true)
-	//stack.Pop()
+	stack.Pop()
 	//stack.Clear()
 
 	fmt.Println(stack.Peek())

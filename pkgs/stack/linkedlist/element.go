@@ -1,4 +1,4 @@
-package stack
+package linkedlist
 
 type ItemType interface{}
 
