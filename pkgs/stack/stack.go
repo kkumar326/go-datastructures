@@ -12,16 +12,16 @@ Element Struct
 - Pointer to previous Element address
 
 Stack methods:
-NewStack to create a new stack
-Len to find length
-Push to push element in stack
-Pop to pull element from stack
-Peek to get top element
-IsEmpty to check if stack is empty
-Clear to clear stack
+- NewStack to create a new stack
+- Len to find length
+- Push to push element in stack
+- Pop to pull element from stack
+- Peek to get top element
+- IsEmpty to check if stack is empty
+- Clear to clear stack
 
 Important Point:
-Mutex lock should be implemented across operations
+- Mutex lock should be implemented across operations
 
 Write Tests
 */
