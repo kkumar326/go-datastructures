@@ -1,2 +1,4 @@
 go-dsa
 .idea
+.vscode
+app.run
