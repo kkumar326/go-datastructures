@@ -116,8 +116,25 @@ func postOrderTraverse(node *bsTree.Node) {
 	fmt.Printf("%v->", node.Key)
 }
 
-func levelOrderTraverse(node *bsTree.Node) {
+func (bst *bstree) levelOrderTraverse(node *bsTree.Node) {
+	levelOrderTraverse(bst.root)
+}
 
+func levelOrderTraverse(node *bsTree.Node) {
+	var nodes = []*bsTree.Node{node}
+
+	// we can use queue as well
+	for i := 0; i < len(nodes); i++ {
+		fmt.Printf("%v->", nodes[i].Key)
+
+		if nodes[i].LeftChild != nil {
+			nodes = append(nodes, nodes[i].LeftChild)
+		}
+
+		if nodes[i].RightChild != nil {
+			nodes = append(nodes, nodes[i].RightChild)
+		}
+	}
 }
 
 func (bst *bstree) min() int {
